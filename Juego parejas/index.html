@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Import Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Import css -->
+  <link rel="stylesheet" href="estilos.css">
+  <title>Juego de parejas</title>
+</head>
+<body>
+  <div class="contenedor">
+    <!-- Los atributos data-* permiten almacenar información adicional sobre un elemento HTML -->
+    <div class="celda" data-valor="1">
+      <img class="foto_detras" src="img/kindpng_1228244.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png"/>
+    </div>
+    <div class="celda" data-valor="1">
+      <img class="foto_detras" src="img/kindpng_1228244.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png"/>
+    </div>
+
+    <div class="celda" data-valor="2">
+      <img class="foto_detras" src="img/kindpng_3388360.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png"/>
+    </div>
+    <div class="celda" data-valor="2">
+      <img class="foto_detras" src="img/kindpng_3388360.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png"/>
+    </div>
+
+    <div class="celda" data-valor="3">
+      <img class="foto_detras" src="img/kindpng_3708691.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+    <div class="celda" data-valor="3">
+      <img class="foto_detras" src="img/kindpng_3708691.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+
+    <div class="celda" data-valor="4">
+      <img class="foto_detras" src="img/kindpng_5042913.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+    <div class="celda" data-valor="4">
+      <img class="foto_detras" src="img/kindpng_5042913.png"/>
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+
+    <div class="celda" data-valor="5">
+      <img class="foto_detras" src="img/kindpng_1290630.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+    <div class="celda" data-valor="5">
+      <img class="foto_detras" src="img/kindpng_1290630.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+
+    <div class="celda" data-valor="6">
+      <img class="foto_detras" src="img/kindpng_3359235.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+    <div class="celda" data-valor="6">
+      <img class="foto_detras" src="img/kindpng_3359235.png" />
+      <img class="foto_delante" src="img/kindpng_1371340.png" />
+    </div>
+  </div>
+  <!-- Cuadro de texto que se pide, con valor 0 y que no se pueda modificar -->
+  <input id="input" type="text" value="0" disabled>
+  <script src="scripts.js"></script>
+</body>
+</html>

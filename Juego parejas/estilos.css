@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+
+input {
+  position: fixed;
+  bottom: 0px;
+  left: 45%;
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contenedor {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.celda {
+  /* Para calcular que las celdas sean rectangulos */
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.celda:active {
+  transform: scale(0.5);
+  transition: transform .5s;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -ms-transition: transform .5s;
+  -o-transition: transform .5s;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+}
+
+.celda.flip {
+  transform: rotateY(180deg);
+}
+
+.foto_detras,
+.foto_delante {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #ffffff;
+  backface-visibility: hidden;
+}
+
+.foto_detras {
+  transform: rotateY(180deg);
+}
+
+.foto_delante {
+  border: 10px solid rgb(255, 0, 0);
+}
+
+.verde {
+  border: 10px solid green;
+}
